@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Short link</title>
+</head>
+
+<body>
+    <style>
+        body {
+            background-color: black;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .form {
+            background-color: aliceblue;
+            display: block;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        
+    </style>
+    <div class="form">
+        <h2>Link Shortener</h2>
+        <label for="texturl">Enter a link:</label>
+        <input type="text" name="texturl" id="texturl">
+        <input type="submit" value="Submit" id="btnurl"><br><br>
+        <label for="" class="radio-style">Short domain:
+            <input type="radio" name="short_domain" id="short_domain" value="shrtco.de" checked= "checked">
+            <label for="shrtco.de">shrtco.de</label>
+            <input type="radio" name="short_domain" id="short_domain" value="9qr.de">
+            <label for="9qr.de">9qr.de</label>
+            <input type="radio" name="short_domain" id="short_domain" value="shiny.link">
+            <label for="shiny.link">shiny.link</label>
+        </label>
+        <br><br>
+        <a href="" id="result"></a>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
